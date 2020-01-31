@@ -12,7 +12,7 @@ JOIN "addresses" ON "addresses".customer_id = "customers".id;
 
 -- Get all orders and their line items (orders, quantity and product).
 
--- what even is this
+-- what even is this.
 
 -- Which warehouses have cheetos?
 
@@ -31,10 +31,23 @@ JOIN "products" ON "products".id = "warehouse_product".product_id
 WHERE "products".description ILIKE 'diet pepsi';
 
 alpha, delta, gamma
+
 -- Get the number of orders for each customer. NOTE: It is OK if those without orders are not included in results.
+
 -- How many customers do we have?
+
+SELECT COUNT("customers".id) FROM "customers"
+
+4
+
 -- How many products do we carry?
+
+SELECT COUNT("products".id) FROM "products"
+
+7
+
 -- What is the total available on-hand quantity of diet pepsi?
+
 -- Stretch
 -- How much was the total cost for each order?
 -- How much has each customer spent in total?
